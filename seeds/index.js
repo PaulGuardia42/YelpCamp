@@ -28,6 +28,7 @@ const seedDB = async () => {
     const random1000 = Math.floor(Math.random() * 1000);
     const price = Math.floor(Math.random() * 20) + 10;
     const camp = new Campground({
+      author: '617207b63f6b1aa4cc381a2b',
       location: `${cities[random1000].city}, ${cities[random1000].state}`,
       // calling the sample function and feeding in the descriptors and places of the seed helpers
       title: `${sample(descriptors)} ${sample(places)}`,
